@@ -14,7 +14,7 @@ class Board extends React.Component{
     renderRow=(indexRow) =>{
         let rowData= Array(this.props.col).fill(null)
         for (let index = 0; index < this.props.col; index++) {
-            let position= (indexRow)*(this.props.col)+index+1;
+            let position= (indexRow)*(this.props.col)+index;
 
             rowData[index]=(
                 this.renderSquare(position)
